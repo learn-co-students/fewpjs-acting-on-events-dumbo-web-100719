@@ -34,7 +34,7 @@ console, and let's get a hold of what we're calling the "dodger":
 let dodger = document.getElementById("dodger");
 ```
 
-Awesome. Now let's change its color:
+Awesome. Now let's change its color:`
 
 ```javascript
 dodger.style.backgroundColor = "#000000";
