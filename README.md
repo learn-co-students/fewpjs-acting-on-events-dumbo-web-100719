@@ -113,14 +113,7 @@ log `ArrowLeft` events. You can try it with other keys (`Shift`, `Control`,
 Let's start moving left then:
 
 ```javascript
-document.addEventListener("keydown", function(e) {
-  if (e.key === "ArrowLeft") {
-    let leftNumbers = dodger.style.left.replace("px", "");
-    let left = parseInt(leftNumbers, 10);
 
-    dodger.style.left = `${left - 1}px`;
-  }
-});
 ```
 
 So what are we doing here? Well, if we catch a left arrow keydown, we move the
@@ -149,14 +142,7 @@ let dodger = document.getElementById("dodger");
 and work on that function:
 
 ```javascript
-function moveDodgerLeft() {
-  let leftNumbers = dodger.style.left.replace("px", "");
-  let left = parseInt(leftNumbers, 10);
 
-  if (left > 0) {
-    dodger.style.left = `${left - 1}px`;
-  }
-}
 ```
 
 We're doing essentially the same as above, but we first ensure that the dodger's
